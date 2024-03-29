@@ -27,3 +27,13 @@ SYMBOL MEANING IN DEPENDENCES
 ^ => update the MINOR and PATCH version to latest stable version
 ~ => update the PATCH version to the latest stable version
 no symbol => installs the extact version that is demanded into package.json dependencies object.
+
+DEV DEPENDENCY
+
+--There are some dependencies that are only required for development but while production it is not required.
+--Hence we are gonna delete such dependencies before production.
+
+npm install webpack --save-dev
+
+echo $NODE_ENV
+NODE_ENV="production" npm install 
