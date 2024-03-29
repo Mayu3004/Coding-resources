@@ -37,3 +37,8 @@ npm install webpack --save-dev
 
 echo $NODE_ENV
 NODE_ENV="production" npm install 
+
+NPM SCRIPTS
+
+If you have custom scripts 
+npm run <script-key>
