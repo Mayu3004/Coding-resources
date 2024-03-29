@@ -20,3 +20,4 @@ SEMANTIC VERSIONING
 
 --each npm package has a version 
 --Three parts MAJOR.MINOR.PATCH
+--Importance of semantic versioning is "When you change the system or environment you want a consistent behaviour of your module"
