@@ -1,0 +1,11 @@
+NPM
+--Microsoft owns npm
+--Standard package manager for node
+--Some times we need to rely on other peoples work becoz we cannot build everything from scratch.
+--People make some modules and host them as packages on npm(npm host the packages)
+--npm act as a command line tool to fetch and install manage update upgrade all the packages in your node application.
+--npm only works with node.
+
+YARN
+--package manager similar to npm
+--managed by facebook

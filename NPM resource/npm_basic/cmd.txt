@@ -1,0 +1,17 @@
+INSTALL NPM
+
+npm i <name of package>
+npm install lodash / npm i lodash
+npm view lodash
+
+REMOVE NPM
+ 
+npm remove <name of package>
+npm uninstall <name of package>
+
+NPM GLOBAL PACKAGE INSTALL
+
+npm i create-react-app -g (-g is the global flag)
+
+NPM CMD FOR GLOBAL PATH
+npm root -g (This helps to find the folder where npm packages are installed globally).
