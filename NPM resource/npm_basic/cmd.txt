@@ -15,3 +15,8 @@ npm i create-react-app -g (-g is the global flag)
 
 NPM CMD FOR GLOBAL PATH
 npm root -g (This helps to find the folder where npm packages are installed globally).
+
+SEMANTIC VERSIONING
+
+--each npm package has a version 
+--Three parts MAJOR.MINOR.PATCH
