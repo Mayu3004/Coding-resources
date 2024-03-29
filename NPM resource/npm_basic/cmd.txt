@@ -42,3 +42,23 @@ NPM SCRIPTS
 
 If you have custom scripts 
 npm run <script-key>
+
+
+NPX =>Node package manager extended
+one time use
+
+
+GLOBAL PACKAGE 
+
+changing global package installation
+npm config get prefix
+make a folder
+
+npm config set prefix <new path where you want to install packages>
+
+CACHING
+storing few packages locally
+so that npm does not need to hit the server everytime
+
+=> Clearing cache memory
+npm cache clean --force
