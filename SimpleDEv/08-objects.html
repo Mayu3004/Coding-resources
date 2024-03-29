@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <script>
+        const products = {
+            name: 'socks',
+            price:1090
+        };
+        const products2 = {
+            name: 'shirt',
+            'delivery-time':'1 day',
+            rating : {
+                stars : 4.5,
+                count: 87
+            },
+            fun: function fun1(){
+                console.log('Function inside object');
+            }
+        }
+        console.log(products);
+        console.log(products.name);
+        console.log(products.price);
+        
+        products.name = 'cotton socks';
+        console.log(products);
+        products.newProperty = true; //creates a prpoerty if does not exist
+        console.log(products);
+        
+        delete products.newProperty;//deletes the property
+        console.log(products);
+
+        console.log(products2);
+        console.log(products2.name);
+        console.log(products2['name']); // Bracket Notation
+        console.log(products2.rating.count);
+        products2.fun();
+        //converting our js object into JSON.JSON is considered as more universal
+        const jsonValue = (JSON.stringify(products2));
+        //converting back the JSON object to js object
+        console.log(JSON.parse(jsonValue));
+
+        console.log('hello'.length);
+        console.log('hello'.toUpperCase());
+        const obj = {
+            message:'hello'
+        }
+        const ob2 = obj;
+        obj.message = "Good job!";
+        const obj3 = {
+            message:"Good job!"
+        }
+        console.log(obj3===obj); //false
+        const obj4 = {
+            message:"Good job!",
+            price:799
+        }
+
+        //const message = obj4.message; 
+        const {message,price} = obj4; //shortcut for destructing
+        console.log(message); //good job
+        console.log(price) // 799
+
+        const obj5 = {
+            //message : message
+            message, //shorthand notation
+            // method : function function1(){
+            //     console.log('Method');
+            // }
+            method(){
+                console.log('Method');
+            }
+
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+
+
+/* Typography is the way that text is arranged amd presented . */
+
+body {
+    padding: 25%;
+    font-size: 2rem;
+    
+}
+/* input,button {
+    font: inherit;
+} */
+p{
+    text-decoration: none;
+    text-align: justify;
+}
+/* 
+two ways to link extrnal font family link from google are
+1.linking the style link in html file befre style
+2.using import */

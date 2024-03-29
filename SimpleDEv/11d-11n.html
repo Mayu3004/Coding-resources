@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // for (let index = 0; index <= 10; index++) {
+        //     if(index % 2 === 0){
+        //         console.log(index);
+        //     }
+            
+        // }
+        // for (let index = 5; index >= 0; index--) {
+        //     console.log(index);
+            
+        // }
+
+        let i = 0;
+        while (i<=10) {
+            console.log(i);
+            i +=2;
+        }
+        let i1 = 5;
+        while (i1>=0) {
+            console.log(i1);
+            i1 -=1;
+        }
+        const array = [1, 2, 3];
+        const result = [];
+
+        for (let i = 0; i < array.length; i++) {
+            result.push(array[i] + 1);
+        }
+
+        console.log(result);
+
+        function addOne(array){
+            const result = [];
+
+            for (let i = 0; i < array.length; i++) {
+                result.push(array[i] + 1);
+            }
+
+            return result;
+        }
+        //const ans = addOne(array);
+        //console.log(ans);
+
+        function addNum(array, num) {
+            const result = [];
+
+            for (let i = 0; i < array.length; i++) {
+                result.push(array[i] + num);
+            }
+
+            return result;
+        }
+        // const ans = addNum(array,4);
+        // console.log(ans);
+
+        function addNum1(array1, array2) {
+            const result = [];
+
+            for (let i = 0; i < array.length; i++) {
+                result.push(array1[i] + array2[i]);
+            }
+
+            return result;
+        }
+
+        const ans = addNum1(array,array);
+        console.log(ans);
+
+        function countPositive(array){
+            
+            let count = 0;
+            for(let i = 0;i<array.length;i++){
+                if(array[i]>0){
+                    count++;
+                }
+            }
+            return count;
+        }
+        const ans1 = countPositive(array);
+        console.log(ans1);
+    </script>
+</body>
+</html>

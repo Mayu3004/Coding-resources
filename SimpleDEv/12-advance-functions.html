@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Functions</title>
+</head>
+<body>
+    <button class="js-button">Click</button>
+    <script>
+        /*
+        function greeting(){
+            console.log("Hello");
+        }
+        greeting();
+
+        const fun1 = function(){
+            console.log('hello');
+        }
+
+        const obj1 = {
+            name: 'Mayur',
+            fun: function(){
+                console.log('hello');
+            }
+        };
+
+        function run(param){
+            param();            //hello2
+        }
+
+        run(function(){
+            console.log("Hello 2")
+        });
+        */
+
+/*
+    setTimeout(function(){
+        console.log('timeout');
+    },3000);  
+    console.log('next-line');
+
+    setInterval(function(){
+        console.log('interval');
+    },3000);
+
+    const arr = [1,2,3,4];
+    arr.forEach(function(value){
+        console.log(value);    
+    });
+
+    //arrowfunctions
+    const arrowFunction = () =>{
+        console.log('hello');
+    };
+
+    const oneParam = param =>{
+        console.log(param);
+    };
+
+    const oneLine = () => 2+3;
+    console.log(oneLine());
+*/
+
+    const buttonElement = document.querySelector('.js-button');
+
+    const eventListener = () => {
+        console.log('click')
+    };
+    buttonElement.addEventListener('click',eventListener);
+    buttonElement.removeEventListener('click',eventListener);
+    buttonElement.addEventListener('click',eventListener);
+    </script>
+</body>
+</html>

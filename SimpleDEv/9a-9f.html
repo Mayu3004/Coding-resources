@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button>9a</button>
+    <button class='js-btn'>9b</button> -->
+
+    
+    <button onclick = "
+    clickEvent('Heads');
+    "  class = "heads-btn">heads</button>
+    <button onclick="clickEvent('Tails');" class="tails-btn">tails</button>
+    
+    <p class="js-value-btn"></p>
+
+    <br>
+
+    <input placeholder="Name" onkeydown="handleNameKeyDown(event)" class = "js-input-value">
+    <button onclick="nameValue()" class="submit-btn">Submit</button>
+    <p class="js-value-name"></p>
+
+
+
+    <script>
+        // console.log(document.querySelector('button'));
+        // document.querySelector('.js-btn').innerHTML = '9b Done';
+        function handleNameKeyDown(event){
+            console.log(event.key);
+            if(event.key === 'Enter'){
+                nameValue();
+            }
+        }
+        function clickEvent(value){
+            document.querySelector('.js-value-btn')
+            .innerHTML = `You chose: ${value}`;
+
+        }
+        function nameValue(){
+            const nameInput = document.querySelector('.js-input-value');
+            const text = nameInput.value;
+            document.querySelector('.js-value-name')
+                .innerHTML = `Your name is ${text}.`
+
+        }
+    </script>
+</body>
+</html>

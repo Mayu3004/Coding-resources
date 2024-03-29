@@ -1,0 +1,27 @@
+body{
+    font-size: 24px;
+    border: 5px solid black;
+}
+p{
+    color: purple;
+}
+/* h1 h2  => this searches the h2 tag inside the h1 to style it*/ 
+
+/* selects both h1 and h2 and styles them */
+h1,h2{
+    color: red;  
+
+}
+.gray{
+    color: gray;
+}
+p{
+    color: brown;
+}
+#second{
+    color: yellow;
+}
+.highlight{
+    text-transform: uppercase;
+    background-color: cadetblue;
+}
