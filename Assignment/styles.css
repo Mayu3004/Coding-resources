@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: burlywood;
+    /* padding: 0; */
+}
+.section-btn{
+    padding: 20rem;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.btn{
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+

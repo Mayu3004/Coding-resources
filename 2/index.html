@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <main>
+        <section class="section">
+        <section class="section-left">
+            <form method="dialog" class="form">
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+                <label for="age">Age:</label>
+                <input type="number" max="100" min="1" id="age">
+                <label for="address">Address:</label>
+                <input type="text" id="address">
+                <label for="contact">Contact:</label>
+                <input type="number" id="contact">
+                <button onclick="saveData()" type="submit">Save</button>
+
+            </form>
+        </section>
+        <section class="section-right">
+            <table class="table">
+                <thead class="table-head">
+                    <td>Name</td>
+                    <td>Age</td>
+                    <td>Contact</td>
+                    <td>Action</td>
+                </thead>
+                <tbody id="table-body"></tbody>
+            </table>
+        </section>
+    </section>
+    <div class="display">
+        
+    </div>
+    </main>
+</body>
+</html>
